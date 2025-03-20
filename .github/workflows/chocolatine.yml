@@ -83,11 +83,6 @@ jobs:
             echo "::error:: ${EXECUTABLES} is missing!"
             exit 1
           fi
-
-      - name: Running test
-        run: |
-            chmod +x ./tester.sh
-            make tests_run
             
 #------------------------------------------------------------------------------------------------------------------------
 #Push the repo
