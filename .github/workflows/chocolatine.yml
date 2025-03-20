@@ -1,6 +1,6 @@
 env:
   MIRROR_URL: git@github.com:EpitechPGEPromo2029/B-CPE-200-LIL-2-1-amazed-fabien.skotarek.git
-  EXECUTABLES: "test"
+  EXECUTABLES: "amazed"
 #------------------------------------------------------------------------------------------------------------------------
 #Header
 name: Petit Pain
@@ -78,9 +78,9 @@ jobs:
       - name: Programme is here?
         run: |
           if [ -f "${EXECUTABLES}" ]; then
-            echo "::notice:: ${EXECUTABLES} is here!"
+            echo "::notice:: ${EXECUTABLES} is here and readable!"
           else
-            echo "::error:: ${EXECUTABLES} is missing!"
+            echo "::error:: ${EXECUTABLES} is missing or not readable!"
             exit 1
           fi
             
