@@ -7,6 +7,6 @@
 
 #ifndef MY_H_
     #define MY_H_
-int amazed(void);
+    int amazed(int argc, char **argv);
 
 #endif /* MY_H_ */

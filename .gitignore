@@ -1,3 +1,9 @@
+# project_file
+amazed
+./.github/workflows/
+tests
+*.txt
+
 # Prerequisites
 *.d
 
@@ -35,7 +41,6 @@
 *.i*86
 *.x86_64
 *.hex
-amazed
 
 # Debug files
 *.dSYM/
@@ -51,4 +56,3 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-./.github/workflows/
