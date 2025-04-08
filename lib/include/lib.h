@@ -60,4 +60,6 @@ int nonalphanum(char c);
 char **my_str_to_word_array_advanced(char *str, char *extra_chars);
 char *my_strtok(char *str, const char *delim);
 char *my_strchr(const char *str, char c);
+int count_word_advanced(char *str);
+int my_word_array_len(char **array);
 #endif /*lib.h*/

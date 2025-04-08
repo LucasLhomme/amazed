@@ -53,6 +53,7 @@ LIB =	./check_strisnum.c\
 	./my_isnum.c\
 	./my_strchr.c\
 	./my_strtok.c\
+	./my_word_array_len.c\
 
 
 OBJ_LIB  	=	 $(LIB:.c=.o)

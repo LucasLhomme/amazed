@@ -19,6 +19,7 @@ NAME = amazed
 CFLAGS = -Wall -Wextra -W -Iinclude -Ilib/include -fdiagnostics-color=always
 SRC =	./src/main.c \
 		./src/amazed.c \
+		./src/parser.c \
 
 OBJ = $(SRC:.c=.o)
 LIBMY = libmy.a

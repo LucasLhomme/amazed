@@ -5,8 +5,30 @@
 ** Header avec les fonctions
 */
 
+
+typedef struct room_s {
+    char *name;
+    int x;
+    int y;
+    struct room_s *next;
+} room_t;
+
+typedef struct tunnel_s {
+    int nb_robots;
+} tunnel_t;
+
+typedef struct maze_s {
+    int nb_robots;
+    room_t *rooms;
+    tunnel_t *tunnels;
+    char *start_room;
+    char *end_room;
+} maze_t;
+
 #ifndef MY_H_
     #define MY_H_
 int amazed(int argc, char **argv);
+int is_tunnel(char *input, maze_t *maze);
+int parser(char *input, maze_t *maze);
 
 #endif /* MY_H_ */
