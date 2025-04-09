@@ -18,6 +18,7 @@ NC=\033[0m # No Color
 NAME = amazed
 CFLAGS = -Wall -Wextra -W -Iinclude -Ilib/include -fdiagnostics-color=always
 SRC =	./src/main.c \
+		./src/algo.c \
 		./src/amazed.c \
 		./src/parser.c \
 
