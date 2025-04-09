@@ -1,9 +1,9 @@
 /*
-** EPITECH PROJECT, 2024
-** Mon H
+** EPITECH PROJECT, 2025
+** amazed
 ** File description:
-** Header avec les fonctions
-*/ 
+** my
+*/
 
 typedef struct room_s {
     char *name;
