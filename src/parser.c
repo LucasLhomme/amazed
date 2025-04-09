@@ -23,6 +23,22 @@ int nb_robots(char *input, maze_t *maze)
     return 1;
 }
 
+maze_t *fill_room(maze_t *maze, char **list)
+{
+    room_t *new_node = malloc(sizeof(room_t));
+
+    if (!new_node)
+        return maze;
+    new_node->name = list[0];
+    new_node->x = list[1];
+    new_node->y = list[2];
+    new_node->next = NULL;
+    while (maze->rooms != NULL)
+        maze->rooms = maze->rooms->next;
+    maze->rooms = new_node;
+    return maze;
+}
+
 int is_room(char *input, maze_t *maze)
 {
     static int printed = 0;
@@ -43,6 +59,7 @@ int is_room(char *input, maze_t *maze)
         printed = 1;
     }
     my_printf("%s", input);
+    maze = fill_room(maze, list);
     return 1;
 }
 

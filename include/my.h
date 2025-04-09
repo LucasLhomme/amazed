@@ -7,8 +7,8 @@
 
 typedef struct room_s {
     char *name;
-    int x;
-    int y;
+    char *x;
+    char *y;
     struct room_s *next;
 } room_t;
 
