@@ -26,7 +26,7 @@ typedef struct maze_s {
 
 #ifndef MY_H_
     #define MY_H_
-int amazed(void);
+void amazed(void);
 int is_tunnel(char *input, maze_t *maze);
 int parser(char *input, maze_t *maze);
 
