@@ -12,7 +12,7 @@ int nb_robots(char *input, maze_t *maze)
 {
     static int first_line = 1;
     char **list = my_str_to_word_array(input);
-    
+
     if (!first_line)
     return 0;
     first_line = 0;
@@ -28,7 +28,7 @@ int is_room(char *input, maze_t *maze)
     static int printed = 0;
     char **list = my_str_to_word_array(input);
     int count = my_word_array_len(list);
-    
+
     if (!input)
     return 84;
     if (my_strncmp(input, "##start", 7) == 0 ||
@@ -49,7 +49,7 @@ int is_room(char *input, maze_t *maze)
 int is_tunnel(char *input, maze_t *maze)
 {
     static int count = 0;
-    
+
     if (!input)
     return 84;
     if (input[0] == '#' || my_strncmp(input, "##", 2) == 0)

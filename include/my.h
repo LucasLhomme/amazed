@@ -3,8 +3,7 @@
 ** Mon H
 ** File description:
 ** Header avec les fonctions
-*/
- 
+*/ 
 
 typedef struct room_s {
     char *name;
