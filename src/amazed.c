@@ -9,7 +9,7 @@
 #include "lib.h"
 #include "my.h"
 
-int amazed(int argc, char **argv)
+void amazed(void)
 {
     char *input = NULL;
     size_t buffer_size = 0;
@@ -19,5 +19,6 @@ int amazed(int argc, char **argv)
     while ((getline(&input, &buffer_size, stdin)) != -1) {
         parser(input, maze);
     }
+    solve_maze(maze);
     free(input);
 }
